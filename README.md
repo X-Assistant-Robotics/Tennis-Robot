@@ -34,6 +34,10 @@ The hardware of the robot is based on the following requirements:
 The software of the robot is based on the following requirements:
 
 1. Brain
+    * [SayCan](https://say-can.github.io/assets/palm_saycan.pdf)(2204)
+    * [Language Models as Zero-Shot Planners:
+Extracting Actionable Knowledge for Embodied Agents](https://arxiv.org/pdf/2201.07207.pdf)(2201)
+    * [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442v1.pdf)(2304)
 2. Control
 3. Vision
 4. Mobile
