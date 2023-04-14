@@ -44,6 +44,10 @@ Extracting Actionable Knowledge for Embodied Agents](https://arxiv.org/pdf/2201.
 5. Manipulation
 6. Interaction
 
+### Infrastructure
+1. Running LLM on bare metal
+    * [ggml](https://github.com/ggerganov/ggml) is the library used to write [llama.cpp](https://github.com/ggerganov/llama.cpp). llama.cpp is able to run on small phone devices. [This discussion](https://github.com/ggerganov/llama.cpp/discussions/915) is also really helpful. See if we could port that library to rust.
+
 ## Future Work
 
 Please wait for the release
