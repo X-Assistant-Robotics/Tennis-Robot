@@ -34,19 +34,33 @@ The hardware of the robot is based on the following requirements:
 The software of the robot is based on the following requirements:
 
 1. Brain
-    * [SayCan](https://say-can.github.io/assets/palm_saycan.pdf)(2204)
-    * [Language Models as Zero-Shot Planners:
-Extracting Actionable Knowledge for Embodied Agents](https://arxiv.org/pdf/2201.07207.pdf)(2201)
-    * [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442v1.pdf)(2304)
+
+    * 参考
+        * [SayCan](https://say-can.github.io/assets/palm_saycan.pdf)(2204)
+        * [Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents](https://arxiv.org/pdf/2201.07207.pdf)(2201)
+        * [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442v1.pdf)(2304)
+        * [VIMA: General Robot Manipulation with Multimodal Prompts](https://vimalabs.github.io/) (ICML 2023)
+        
 2. Control
+    * 参考
+        * [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://voxposer.github.io/) (2307)
 3. Vision
 4. Mobile
 5. Manipulation
 6. Interaction
 
 ### Infrastructure
+1. DDS
+    * 参考
+        * [RustDDS](https://github.com/jhelovuo/RustDDS)
+1. Robotic framework
+    * 参考
+        * [Dora](https://dora.carsmos.ai/)
+        * [ROS2](https://docs.ros.org/en/rolling/)
 1. Running LLM on bare metal
-    * [ggml](https://github.com/ggerganov/ggml) is the library used to write [llama.cpp](https://github.com/ggerganov/llama.cpp). llama.cpp is able to run on small phone devices. [This discussion](https://github.com/ggerganov/llama.cpp/discussions/915) is also really helpful. See if we could port that library to rust.
+    * 参考
+        * [ggml](https://github.com/ggerganov/ggml) is the library used to write [llama.cpp](https://github.com/ggerganov/llama.cpp). llama.cpp is able to run on small phone devices. [This discussion](https://github.com/ggerganov/llama.cpp/discussions/915) is also really helpful. See if we could port that library to rust.
+        * [llama2.c](https://github.com/karpathy/llama2.c) is a "fullstack" train + inference solution for Llama 2 LLM, with a focus on minimalism and simplicity. llama2.c can train the Llama 2 LLM architecture from scratch in PyTorch, then export the weights to a binary file, and load that into one ~simple 500-line C file (run.c) that inferences the model.
 
 ## Future Work
 
